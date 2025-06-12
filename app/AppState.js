@@ -6,8 +6,9 @@ import { createObservableProxy } from './utils/ObservableProxy.js'
 class ObservableAppState extends EventEmitter {
 /** @type {Identity}*/
 identity = null
+
 /** @type {Gift[]} */ 
-gifts = []
+gifts = [];
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
