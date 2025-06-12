@@ -1,0 +1,11 @@
+import { AuthController } from "./Auth/AuthController.js"
+import { GiftsController } from "./controllers/GiftsController.js"
+
+class App {
+authController = new AuthController()
+  giftController = new GiftsController()
+}
+
+window['app'] = new App()
+
+
