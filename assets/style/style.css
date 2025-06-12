@@ -10,6 +10,12 @@ main {
   
 }
 
+.card-bg {
+  background-color: whitesmoke;
+  box-shadow: 0 0 3px black;
+  
+}
+
 #pop-toast-container {
   display: flex;
   flex-direction: column;

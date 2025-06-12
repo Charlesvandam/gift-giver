@@ -5,7 +5,7 @@ import { Pop } from "../utils/Pop.js";
 export class GiftsController{
     constructor(){
 console.log('this controller is ready');
-        AppState.on('identity', this.getgifts)
+        AppState.on('identity', this.getgifts);
 
     }
 
