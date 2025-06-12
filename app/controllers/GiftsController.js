@@ -14,7 +14,7 @@ try {
     await giftsService.getGifts()
     
 } catch (error) {
-    Pop.error(error, "you done fucked up", "could not get gifts")
+    Pop.error(error, "you done fudged up", "could not get gifts")
     console.error('getgifts failed', error)
     
 }
