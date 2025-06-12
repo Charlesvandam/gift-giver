@@ -6,7 +6,8 @@ export class GiftsController {
     constructor() {
         console.log("this controller is ready");
         AppState.on("identity", this.getgifts);
-        AppState.on('gifts', this.drawGifts)
+        AppState.on('gifts', this.drawGifts);
+        AppState.on('openedGift', this.getgifts);
         
     }
 

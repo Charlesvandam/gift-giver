@@ -13,7 +13,7 @@ class GiftsService{
     }
 
     async changeBoolean(giftId) {
-        const ourGift = AppState.gifts.find((gift) => giftId == gift.id);
+        let ourGift = AppState.gifts.find((gift) => giftId == gift.id);
         console.log('📡📡📡📡📡 found Gift', ourGift);
         if (ourGift.opened === true) {
             return;
@@ -22,7 +22,9 @@ class GiftsService{
             ourGift.opened = true;
             const res = await api.put(`api/gifts/${giftId}`, ourGift);
             console.log('🐕‍🦺🎁📡PUT putted', res.data);
+            AppState.openedGift = ourGift;
         }
+        
     }
 }
 

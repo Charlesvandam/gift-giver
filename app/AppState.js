@@ -9,6 +9,8 @@ identity = null
 
 /** @type {Gift[]} */ 
 gifts = [];
+
+openedGift = null;
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
